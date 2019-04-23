@@ -34,6 +34,5 @@ public class Third {
             }
         }
         out.println(String.format("The bishop  can make check to the King on = %b", check));
-
     }
 }

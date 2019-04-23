@@ -1,14 +1,12 @@
 package HW3.twoDemArraysExtra;
 
-import java.util.Arrays;
-
 import static java.lang.System.out;
 
 public class First {
     public static void main(String[] args) {
-        int[][] spiral = new int[20][20];
+        int[][] spiral = new int[10][10];
         int first = 0;
-        int last = 20;
+        int last = 10;
         int i = 0;
         int j = -1;
         int number = 0;
@@ -33,9 +31,15 @@ public class First {
             first++;
             last--;
         }
-
         for (int x = 0; x < spiral[0].length; x++) {
-            out.println(Arrays.toString(spiral[x]));
+            for (int y = 0; y < spiral[0].length; y++) {
+                if(spiral[x][y] < 10){
+                    out.print(spiral[x][y] + "  ");
+                } else {
+                    out.print(spiral[x][y] + " ");
+                }
+            }
+            out.println();
         }
     }
 
